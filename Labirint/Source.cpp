@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
-const int n = 4; //ñòðîêè
-const int m = 4; // ñòîëáöû
+const int n = 4; //ÑÑ‚Ñ€Ð¾ÐºÐ¸
+const int m = 4; // ÑÑ‚Ð¾Ð»Ð±Ñ†Ñ‹
 
 int a[n][m] = { { 1, 1, 0, 0 }, { 0, 1, 1,0 }, { 0, 0, 1,1 }, {0, 0, 1,1} };
 
@@ -11,7 +11,6 @@ bool f[n][m] = { 0 };
 
 void lab(int i, int j)
 {
-
 	if ((j >= 0 && j < n) && (i >= 0 && i < m))
 	{
 		if (a[m - 1][n - 1] == 1 && f[m - 1][n - 1] == true)
@@ -45,10 +44,10 @@ void lab1(int i, int j) {
 	lab(i, j);
 
 	if (f[m - 1][n - 1] == true)
-		cout << "Âûõîä åñòü. " << endl;
+		cout << "Ð’Ñ‹Ñ…Ð¾Ð´ ÐµÑÑ‚ÑŒ. " << endl;
 
 	else
-		cout << "Âûõîäà íåò." << endl;
+		cout << "Ð’Ñ‹Ñ…Ð¾Ð´Ð° Ð½ÐµÑ‚." << endl;
 
 }
 
